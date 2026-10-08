@@ -1,0 +1,28 @@
+﻿        using System;
+        using System.Collections.Generic;
+        using System.Linq;
+        using System.Text;
+        using System.Threading.Tasks;
+
+        namespace Program17
+        {
+        internal class Program
+        {
+        static void Main(string[] args)
+        {
+            // Шаг 1: вычисляем отдельные условия
+            bool left = 3 < 5;        // true
+            bool right = 10 >= 20;    // false
+
+            // Шаг 2: сравниваем результаты условий
+            bool res = left == right; // true == false → false
+
+            Console.WriteLine($"3 < 5        → {left} (тип: {left.GetType().Name})");
+            Console.WriteLine($"10 >= 20     → {right} (тип: {right.GetType().Name})");
+            Console.WriteLine($"(3 < 5) == (10 >= 20) = {res}"); // False
+
+            // Дополнительно: покажем, что сравнение bool-значений — это обычная операция
+            Console.WriteLine($"left == right = {left == right}"); // False
+        }
+    }
+    }
